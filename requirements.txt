@@ -1,6 +1,6 @@
-selenium==4.27.1
-webdriver-manager==4.0.2
-pytest==8.4.2
+playwright==1.49.0
+pytest-playwright==0.4.3
+pytest==7.4.4
 faker==37.8.0
 pytest-html==4.1.1
 pytest-xdist==3.8.0
