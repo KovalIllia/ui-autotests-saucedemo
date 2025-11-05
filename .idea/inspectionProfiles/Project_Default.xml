@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="allure-pytest" />
+          <option value="requests" />
+          <option value="pytest" />
+          <option value="Flask" />
+          <option value="pytest-html" />
+          <option value="selenium" />
+          <option value="pytest-xdist" />
+          <option value="webdriver-manager" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
