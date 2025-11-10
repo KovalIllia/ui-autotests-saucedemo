@@ -1,6 +1,9 @@
 import pytest
 from playwright.sync_api import sync_playwright, Browser, BrowserContext, Page
 
+from pages.login_page import LoginPage
+from utils.user_credentials import UserCredentials
+
 
 @pytest.fixture(scope="function")
 def page():
@@ -26,3 +29,50 @@ def page():
         yield page
         context.close()
         browser.close()
+
+
+@pytest.fixture(scope="function")
+def login_standart_user(page):
+    login_page=LoginPage(page)
+    login_page.open_page()
+    login_page.verify_page_loaded()
+    login_page.verify_loaded_url()
+    login_page.fill_username(UserCredentials.STANDARD_USER)
+    login_page.fill_password(UserCredentials.PASSWORD)
+    login_page.click_login_button()
+    return login_page
+
+
+@pytest.fixture(scope="function")
+def login_problem_user(page):
+    login_page = LoginPage(page)
+    login_page.open_page()
+    login_page.verify_page_loaded()
+    login_page.verify_loaded_url()
+    login_page.fill_username(UserCredentials.PROBLEM_USER)
+    login_page.fill_password(UserCredentials.PASSWORD)
+    login_page.click_login_button()
+    return login_page
+
+@pytest.fixture(scope="function")
+def login_locked_user(page):
+    login_page = LoginPage(page)
+    login_page.open_page()
+    login_page.verify_page_loaded()
+    login_page.verify_loaded_url()
+    login_page.fill_username(UserCredentials.LOCKED_OUT_USER)
+    login_page.fill_password(UserCredentials.PASSWORD)
+    login_page.click_login_button()
+    return login_page
+
+
+@pytest.fixture(scope="function")
+def login_visual_user(page):
+    login_page = LoginPage(page)
+    login_page.open_page()
+    login_page.verify_page_loaded()
+    login_page.verify_loaded_url()
+    login_page.fill_username(UserCredentials.VISUAL_USER)
+    login_page.fill_password(UserCredentials.PASSWORD)
+    login_page.click_login_button()
+    return login_page
