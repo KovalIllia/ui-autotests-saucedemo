@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="ready test_login_page.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-    </list>
+    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="start products_page.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762807962569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="start products_page.py">
+      <option name="closed" value="true" />
+      <created>1762811767621</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762811767621</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +143,7 @@
     <MESSAGE value="start for base_page" />
     <MESSAGE value="base_page p2" />
     <MESSAGE value="ready test_login_page.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready test_login_page.py" />
+    <MESSAGE value="start products_page.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="start products_page.py" />
   </component>
 </project>
