@@ -10,6 +10,7 @@ def test_login_user(page):
     login_page.open_page()
     login_page.verify_page_loaded()
     login_page.verify_loaded_url()
+    login_page.verify_form_elements_ready()
     login_page.fill_username(username)
     login_page.fill_password(password)
     login_page.click_login_button()
