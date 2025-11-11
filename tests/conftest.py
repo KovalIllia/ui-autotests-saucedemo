@@ -2,6 +2,7 @@ import pytest
 from playwright.sync_api import sync_playwright, Browser, BrowserContext, Page
 
 from pages.login_page import LoginPage
+from pages.products_page import ProductsPage
 from utils.user_credentials import UserCredentials
 
 
@@ -76,3 +77,15 @@ def login_visual_user(page):
     login_page.fill_password(UserCredentials.PASSWORD)
     login_page.click_login_button()
     return login_page
+
+
+@pytest.fixture(scope="function")
+def products_page(login_standart_user):
+    page=login_standart_user.page
+    products_page = ProductsPage(page)
+    products_page.verify_opening_page()
+    products_page.verify_page_loaded()
+    # products_page.get_first_order()
+    # products_page.get_second_order()
+    # products_page.shopping_cart_backet()
+    return products_page

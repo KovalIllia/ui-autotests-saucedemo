@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="start products_page.py">
+    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="start products_page.py + refresh test_login_page.py">
+      <change afterPath="$PROJECT_DIR$/tests/test_products_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/products_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python tests.Python tests for tests.test_login_page.test_login_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_products_page.test_add_items_to_cart.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -60,7 +62,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_products_page.test_add_items_to_cart">
     <configuration name="Python tests for tests.test_login_page.test_login_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ui-autotests-saucedemo" />
       <option name="ENV_FILES" value="" />
@@ -76,8 +78,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.test_products_page.test_add_items_to_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="ui-autotests-saucedemo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_products_page.test_add_items_to_cart&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.test_products_page.test_add_items_to_cart" />
         <item itemvalue="Python tests.Python tests for tests.test_login_page.test_login_user" />
       </list>
     </recent_temporary>
@@ -129,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762811767621</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="start products_page.py + refresh test_login_page.py">
+      <option name="closed" value="true" />
+      <created>1762866101037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762866101037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +174,7 @@
     <MESSAGE value="base_page p2" />
     <MESSAGE value="ready test_login_page.py" />
     <MESSAGE value="start products_page.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="start products_page.py" />
+    <MESSAGE value="start products_page.py + refresh test_login_page.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="start products_page.py + refresh test_login_page.py" />
   </component>
 </project>
