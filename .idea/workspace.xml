@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="start products_page.py + refresh test_login_page.py">
-      <change afterPath="$PROJECT_DIR$/tests/test_shopping_cart_page.py" afterDir="false" />
+    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="shopping_cart.py + test_shopping_cart_page.py">
+      <change afterPath="$PROJECT_DIR$/tests/test_checkout_information_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/shopping_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shopping_cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_products_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_products_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout_complete_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_complete_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout_information_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_information_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout_overview_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_overview_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/user_credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/user_credentials.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for tests.test_login_page.test_login_user.executor": "Run",
-    "Python tests.Python tests for tests.test_products_page.test_add_items_to_cart.executor": "Run",
-    "Python tests.Python tests for tests.test_shopping_cart_page.test_checking_shopping_cart_page.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/koval_i/PycharmProjects/ui-autotests",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for tests.test_login_page.test_login_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_products_page.test_add_items_to_cart.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_shopping_cart_page.test_checking_shopping_cart_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/koval_i/PycharmProjects/ui-autotests&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for tests.test_shopping_cart_page.test_checking_shopping_cart_page">
     <configuration name="Python tests for tests.test_login_page.test_login_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ui-autotests-saucedemo" />
@@ -174,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762866101037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="shopping_cart.py + test_shopping_cart_page.py">
+      <option name="closed" value="true" />
+      <created>1763067391053</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763067391053</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +202,7 @@
     <MESSAGE value="ready test_login_page.py" />
     <MESSAGE value="start products_page.py" />
     <MESSAGE value="start products_page.py + refresh test_login_page.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="start products_page.py + refresh test_login_page.py" />
+    <MESSAGE value="shopping_cart.py + test_shopping_cart_page.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="shopping_cart.py + test_shopping_cart_page.py" />
   </component>
 </project>

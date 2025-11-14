@@ -8,3 +8,9 @@ class UserCredentials:
     ERROR_USER ="error_user"
     VISUAL_USER = "visual_user"
     PASSWORD = "secret_sauce"
+
+
+class UserCredentialForDelivery:
+    STANDARD_USER_FIRST_NAME = "Illia"
+    STANDARD_USER_SECOND_NAME = "Koval"
+    STANDARD_USER_ZIP_CODE="08188"
