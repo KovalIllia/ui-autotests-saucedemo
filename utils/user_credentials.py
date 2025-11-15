@@ -12,5 +12,5 @@ class UserCredentials:
 
 class UserCredentialForDelivery:
     STANDARD_USER_FIRST_NAME = "Illia"
-    STANDARD_USER_SECOND_NAME = "Koval"
+    STANDARD_USER_LAST_NAME = "Koval"
     STANDARD_USER_ZIP_CODE="08188"

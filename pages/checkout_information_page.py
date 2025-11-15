@@ -11,7 +11,7 @@ class CheckoutInformationLocators:
     LAST_NAME_FIELD= "//input[@class='input_error form_input' and @placeholder='Last Name']"
     ZIP_CODE="//input[@class='input_error form_input' and @placeholder='Zip/Postal Code']"
     CANCEL_BUTTON="//button[@class='btn btn_secondary back btn_medium cart_cancel_link' and @data-test='cancel']"
-    CONTINUE="//input[@class='submit-button btn btn_primary cart_button btn_action' and @data-test='continue' ]"
+    CONTINUE_BUTTON="//input[@class='submit-button btn btn_primary cart_button btn_action' and @data-test='continue' ]"
 
 class CheckoutInformationPage(LoginPage):
     def __init__(self, page:Page):
@@ -26,7 +26,7 @@ class CheckoutInformationPage(LoginPage):
         expect(self.page.locator(self.locators.FIRST_NAME_FIELD)).to_be_visible()
         expect(self.page.locator(self.locators.LAST_NAME_FIELD)).to_be_visible()
         expect(self.page.locator(self.locators.CANCEL_BUTTON)).to_be_visible()
-        expect(self.page.locator(self.locators.CONTINUE)).to_be_visible()
+        expect(self.page.locator(self.locators.CONTINUE_BUTTON)).to_be_visible()
 
     def fill_first_name(self,firstname: str):
         expect(self.page.locator(self.locators.FIRST_NAME_FIELD)).to_be_visible()
@@ -34,8 +34,20 @@ class CheckoutInformationPage(LoginPage):
         self.page.fill(self.locators.FIRST_NAME_FIELD, firstname)
         expect(self.page.locator(self.locators.FIRST_NAME_FIELD)).to_have_value(firstname)
 
-    def fill_last_name(self):
-        pass
+    def fill_last_name(self, last_name: str):
+        expect(self.page.locator(self.locators.LAST_NAME_FIELD)).to_be_visible()
+        expect(self.page.locator(self.locators.LAST_NAME_FIELD)).to_be_enabled()
+        self.page.fill(self.locators.LAST_NAME_FIELD, last_name)
+        expect(self.page.locator(self.locators.LAST_NAME_FIELD)).to_have_value(last_name)
 
-    def fill_zip_code(self):
-        pass
+    def fill_zip_code(self,zip_code:str):
+        expect(self.page.locator(self.locators.ZIP_CODE)).to_be_visible()
+        expect(self.page.locator(self.locators.ZIP_CODE)).to_be_enabled()
+        self.page.fill(self.locators.ZIP_CODE, zip_code)
+        expect(self.page.locator(self.locators.ZIP_CODE)).to_have_value(zip_code)
+
+
+    def click_continue_button(self):
+        expect(self.page.locator(self.locators.CONTINUE_BUTTON)).to_be_visible()
+        expect(self.page.locator(self.locators.CONTINUE_BUTTON)).to_be_enabled()
+        self.page.click(self.locators.CONTINUE_BUTTON)
