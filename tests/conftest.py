@@ -2,10 +2,11 @@ import pytest
 from playwright.sync_api import sync_playwright, Browser, BrowserContext, Page
 
 from pages.checkout_information_page import CheckoutInformationPage
+from pages.checkout_overview_page import CheckoutOverviewPage
 from pages.login_page import LoginPage
 from pages.products_page import ProductsPage
 from pages.shopping_cart import ShoppingCartPage
-from utils.user_credentials import UserCredentials
+from utils.user_credentials import UserCredentials, UserCredentialForDelivery
 
 
 @pytest.fixture(scope="function")
@@ -15,8 +16,7 @@ def page():
             headless=True,
             args=[
                 "--no-sandbox",
-                "--headless=new"
-                "--disable-dev-shm-usage",
+                "--headless=new" "--disable-dev-shm-usage",
                 "--disable-gpu",
                 "--disable-software-rasterizer",
                 "--window-size=1920,1080",
@@ -111,11 +111,28 @@ def shopping_cart_page(products_page_all_flow):
     shoping_cart_page.verify_page_loaded()
     return shoping_cart_page
 
+
 @pytest.fixture(scope="function")
 def checkout_information_page(shopping_cart_page):
-    page=shopping_cart_page.page
+    page = shopping_cart_page.page
     shopping_cart_page.click_checkout_button()
-    checkout_information_page=CheckoutInformationPage(page)
+    checkout_information_page = CheckoutInformationPage(page)
     checkout_information_page.verify_opening_page()
     checkout_information_page.verify_page_loaded()
     return checkout_information_page
+
+
+@pytest.fixture(scope="function")
+def checkout_overview_page(checkout_information_page):
+    page = checkout_information_page.page
+
+    checkout_information_page.fill_first_name(UserCredentialForDelivery.STANDARD_USER_FIRST_NAME)
+    checkout_information_page.fill_last_name(UserCredentialForDelivery.STANDARD_USER_LAST_NAME)
+    checkout_information_page.fill_zip_code(UserCredentialForDelivery.STANDARD_USER_ZIP_CODE)
+    checkout_information_page.click_continue_button()
+
+
+    checkout_overview_page = CheckoutOverviewPage(page)
+    checkout_overview_page.verify_opening_page()
+    checkout_overview_page.verify_page_loaded()
+    return checkout_overview_page
