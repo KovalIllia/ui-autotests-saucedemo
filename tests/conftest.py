@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright, Browser, BrowserContext, Page
 
+from pages.checkout_complete_page import CheckoutCompletePage
 from pages.checkout_information_page import CheckoutInformationPage
 from pages.checkout_overview_page import CheckoutOverviewPage
 from pages.login_page import LoginPage
@@ -136,3 +137,14 @@ def checkout_overview_page(checkout_information_page):
     checkout_overview_page.verify_opening_page()
     checkout_overview_page.verify_page_loaded()
     return checkout_overview_page
+
+
+
+@pytest.fixture(scope="function")
+def complete_page(checkout_overview_page):
+    page = checkout_overview_page.page
+    checkout_overview_page.click_finish_button()
+    checkout_complete_page = CheckoutCompletePage(page)
+    checkout_complete_page.verify_opening_page()
+    checkout_complete_page.verify_page_loaded()
+    return checkout_complete_page

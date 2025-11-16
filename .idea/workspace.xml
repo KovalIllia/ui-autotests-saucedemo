@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="added checkout_information_page.py + test_checkout_information_page.py">
-      <change afterPath="$PROJECT_DIR$/tests/test_checkout_overview_page.py" afterDir="false" />
+    <list default="true" id="000fab99-ea77-433e-af02-a80843294ab5" name="Changes" comment="added checkout_overview_page.py + test_checkout_overview_page.py">
+      <change afterPath="$PROJECT_DIR$/tests/test_checkout_complete_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout_information_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_information_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout_overview_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_overview_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout_complete_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_complete_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.test_checkout_complete_page.test_checkout_complete_page.executor": "Run",
     "Python tests.Python tests for tests.test_checkout_information_page.test_checkout_information_page.executor": "Run",
     "Python tests.Python tests for tests.test_checkout_overview_page.test_checkout_overview_page.executor": "Run",
     "Python tests.Python tests for tests.test_login_page.test_login_user.executor": "Run",
@@ -66,7 +66,22 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_checkout_overview_page.test_checkout_overview_page">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_checkout_complete_page.test_checkout_complete_page">
+    <configuration name="Python tests for tests.test_checkout_complete_page.test_checkout_complete_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="ui-autotests-saucedemo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_checkout_complete_page.test_checkout_complete_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for tests.test_checkout_information_page.test_checkout_information_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ui-autotests-saucedemo" />
       <option name="ENV_FILES" value="" />
@@ -94,21 +109,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.test_checkout_overview_page.test_checkout_overview_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_login_page.test_login_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="ui-autotests-saucedemo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_login_page.test_login_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -144,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.test_checkout_complete_page.test_checkout_complete_page" />
         <item itemvalue="Python tests.Python tests for tests.test_checkout_overview_page.test_checkout_overview_page" />
         <item itemvalue="Python tests.Python tests for tests.test_checkout_information_page.test_checkout_information_page" />
         <item itemvalue="Python tests.Python tests for tests.test_shopping_cart_page.test_checking_shopping_cart_page" />
         <item itemvalue="Python tests.Python tests for tests.test_products_page.test_add_items_to_cart" />
-        <item itemvalue="Python tests.Python tests for tests.test_login_page.test_login_user" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763240638171</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added checkout_overview_page.py + test_checkout_overview_page.py">
+      <option name="closed" value="true" />
+      <created>1763243778852</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1763243778852</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +262,7 @@
     <MESSAGE value="shopping_cart.py + test_shopping_cart_page.py" />
     <MESSAGE value="added few pages" />
     <MESSAGE value="added checkout_information_page.py + test_checkout_information_page.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added checkout_information_page.py + test_checkout_information_page.py" />
+    <MESSAGE value="added checkout_overview_page.py + test_checkout_overview_page.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added checkout_overview_page.py + test_checkout_overview_page.py" />
   </component>
 </project>
